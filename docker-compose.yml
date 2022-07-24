@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    command: python /a9/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/shop2
+    ports:
+      - 8000:8000
